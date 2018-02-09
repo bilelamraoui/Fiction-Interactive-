@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Fiction Interactive</title>
+</head>
+<body id="body" class="">
+  <header class="row align-items-center ">
+    <div class="col-12 ">
+      <h1 class="text-center white m-4">Prototype De Fiction Interactive</h1>
+    </div>
+  </header>
+  <div  class="col-12 m-1">
+    <div class=" d-flex flex-column align-items-center">
+        <p class="bg_color col-12 col-md-6 col-lg-6 m-2">
+            Nous sommes vendredi soir, comment vous sentez vous aprés cette semaine de cours ?
+        </p>
+        <input class="btn btn-dark form-control col-sm-12 col-md-6 col-lg-6 m-2" id="choice1" type="button" value="Je me sens bien j’ai envie de sortir">
+        <input class=" btn btn-dark form-control col-sm-12 col-md-6 col-lg-6 m-2" id="choice2" type="button" value="Je préfère me reposer">
+    </div>
+    <div  class="d-flex flex-column align-items-center">
+        <p id="part2.1" class="invisible bg_color col-12 col-md-6 col-lg-6 m-2">
+            Vous allez chez un ami en voiture pour se mettre d'accord de l'endroit ou vous allez vous rendre ce soir
+        </p>
+        <p id="part2.2" class="invisible bg_color col-12 col-md-6 col-lg-6 m-2">
+            Vous commencez à vous détendre, soudainement un(e) de vos ami(e)s vous appelle et persiste pour sortir ce soir
+        </p>
+        <input id="choice3" class="invisible btn btn-dark form-control col-sm-12 col-md-6 col-lg-6 m-1" type="button" value="Vous décidez donc de sortir en club">
+        <input id="choice4" class="invisible btn btn-dark form-control col-sm-12 col-md-6 col-lg-6 m-1" type="button" value="Vous décidez d'aller à une fête chez un(e) ami(e)">
+    </div>
+    <div class=" d-flex flex-column align-items-center">
+        <p id="part3.1" class="invisible bg_color col-12 col-md-6 col-lg-6 m-2">
+            Vous arrivez au club, l'ambiance est la, le DJ met le son et l'alcool réchauffe les esprits. Une personne vous plaît au bar, que faites-vous?
+        </p>
+        <input id="choice5" class="invisible btn btn-dark form-control col-sm-12 col-md-6 col-lg-6 m-1" type="button" value="Je vais lui parler et lui proposer un cocktail">
+        <input id="choice6" class="invisible btn btn-dark form-control col-sm-12 col-md-6 col-lg-6 m-1" type="button" value="Je vais lui parler">
+        <p id="part3.3" class="invisible bg_color col-12 col-md-6 col-lg-6 m-2">
+            Vous commencez à discuter, au fil de la discussion elle vous propose des coups à boire, vous acceptez volontiers. Il est maintenant 2 h 00 du matin, vous vous sentez fatiguer et songer a rentré chez vous. Vous êtes sur le parking, le seul qui n'a pas bu ni fumer n'a pas le permis. Qui va prendre le volant?
+        </p>
+        <p id="part3.2" class="invisible bg_color col-12 col-md-6 col-lg-6 m-2">
+            Vous arrivez chez votre ami(e) l'ambiance est bonne. Un(e) de vos ami(e)s retrouvé(e)s sur place viens vers vous et vous propose a fumé du cannabis
+            </p>
+        <input id="choice7" class="invisible btn btn-dark form-control col-sm-12 col-md-6 col-lg-6 m-1" type="button" value="J'ai vraiment hâte d'essayer, Allons-y !">
+        <input id="choice8" class="invisible btn btn-dark form-control col-sm-12 col-md-6 col-lg-6 m-1" type="button" value="Non merci ça ne m'attire pas">
+    </div>
+
+    <div class=" d-flex flex-column align-items-center">
+        <p id="part4.1" class="invisible bg_color col-12 col-md-6 col-lg-6 m-2">
+            Vous commencez a enchaîné les verres autour d'une discussion appropriée. Il est maintenant 2 h 00 du matin, vous commencez à fatiguer et songer a rentré chez vous. Vous êtes sur le parking, le seul qui n'a pas bu ni fumer n'a pas le permis. Qui va prendre le volant ?
+        </p>
+        <p id="part4.2" class="invisible bg_color col-12 col-md-6 col-lg-6 m-2">
+            Il est maintenant 2 h 00 du matin, vous vous sentez fatiguer et songer a rentré chez vous. Vous êtes sur le parking, le seul qui n'a pas bu ni fumer n'a pas le permis. Qui va prendre le volant?
+        </p>
+        <p id="part4.3" class="invisible bg_color col-12 col-md-6 col-lg-6 m-2">
+            Vos ami(e)s persistent fortement pour vous faire essayer et vous cédez à la tentation. Il est maintenant 2 h 00 du matin, vous vous sentez fatiguer et songer a rentré chez vous. Vous êtes sur le parking, le seul qui n'a pas bu ni fumer n'a pas le permis. Qui va prendre le volant?
+        </p>
+        </div>
+        <div class="  d-flex flex-column align-items-center">
+          <input id="choice9" class="invisible btn btn-dark form-control col-sm-12 col-md-6 col-lg-6 m-1" type="button" value="Celui qui n’a pas le permis">
+          <input id="choice10" class="invisible btn btn-dark form-control col-sm-12 col-md-6 col-lg-6 m-1" type="button" value="Moi">
+        </div>
+
+        <div class="  d-flex flex-column align-items-center">
+            <p id="end" class="invisible bg_color col-12 col-md-6 col-lg-6 m-2">
+              ... Les sirénes retentissent, vous vous sentez mal ...
+              Vous plongez dans un comas profond ...
+            </p>
+            <input id="reset" class="invisible btn btn-light form-control col-sm-12 col-md-6 col-lg-6 m-1" type="button" value="Restart">
+        </div>
+      </div>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

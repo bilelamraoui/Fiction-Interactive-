@@ -1,0 +1,33 @@
+.invisible {
+    display: none;
+}
+
+body:before {
+    content: "image";
+    position: fixed;
+    height: 100%; width: 100%;
+    background-image: url(image/tobias-a-muller-287112.jpg);
+    background-size: cover;
+    z-index: -1; /* Keep the background behind the content */ 
+    -webkit-backdrop-filter:  blur(4px);    
+    -webkit-filter: blur(4px);
+    -webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */
+}
+
+.bg_color {
+    background-color: #f7ead4;
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.img:before {
+    background-image: url(image/imagee.jpg);
+}
